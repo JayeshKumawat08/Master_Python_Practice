@@ -1,1 +1,2 @@
-# Master_Python_Practice
+Repository Purpose
+This repository serves as my daily coding workspace and documents my Master's degree journey. It is designed to track my progress in building mathematically rigorous, scalable software architectures rather than just running basic tutorials. I actively practice the "No Black Box" methodology here—coding the underlying mathematics of algorithms first and mastering matrix dimensions before relying on automated libraries.
