@@ -16,7 +16,7 @@ with open(bin_path,"wb") as file:
     file.write(file_bytes)
 
 print("Successfully encrypted into 'encrypted_secrets.bin'")
-
+print(list(file_bytes))
 print("\n\nDecryption Phase ")
 
 with open(bin_path,"rb") as file:
@@ -27,3 +27,4 @@ for i in range(len(encrypted_bytes)):
 
 decrypted_text = encrypted_bytes.decode('utf-8')
 print(f"Decrypted Data: {decrypted_text}")
+
