@@ -24,8 +24,19 @@ print(first_student)
 print("-"*40)
 name_and_marks = df.loc[:,["Name","Marks"]]
 print(name_and_marks)
+print('-'*40)
 
+print("Dimentions\n")
+print(df.shape)
 
+print("\nSummary\n")
+print(df.describe())
+
+print('-'*40)
+
+dept_avg = df.groupby("Department")["Marks"].mean()
+print("\nAverage Marks by Department")
+print(dept_avg)
 
 
 
