@@ -37,7 +37,7 @@ def run_bank_system():
 
         choice = input("Enter your choice: ").strip()
 
-        if choice == 1:
+        if choice == '1':
             acc_no = input("Enter the New Account Number: ").strip()
             if acc_no in accounts:
                 print("Account already exists!")
@@ -48,7 +48,7 @@ def run_bank_system():
                 accounts[acc_no]= BankAccount(acc_no,name,initial)
                 print(f"Account Created Successfully {name}")
 
-        elif choice == 2:
+        elif choice == '2':
             acc_no = input("Enter the Account Number: ").strip()
             if acc_no in accounts:
                 amount = float(input("Enter the amount to be Deposited: "))
@@ -69,7 +69,7 @@ def run_bank_system():
             if acc_no in accounts:
                 bal = accounts[acc_no].get_balance()
                 user_name = accounts[acc_no].name
-                print("Available balance for {user_name} is {bal}.")
+                print(f"Available balance for {user_name} is {bal}.")
             else:
                 print("Account not found")
 
