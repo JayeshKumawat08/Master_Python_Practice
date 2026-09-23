@@ -216,3 +216,15 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# Ignore Jupyter Notebook files
+Untitled*.ipynb
+
+# Ignore data and text files
+*.txt
+*.csv
+*.bin
+
+# If you want to keep the "Study/" folder untracked for now
+Study/
