@@ -16,3 +16,26 @@ print(f"Highest marks in Physics : {student(high_phy)}  {high_phy}")
 
 high_cs = np.argmax(cs)
 print(f"Highest marks is Computer Science: {student(high_phy)}  {high_phy}")
+
+plt.figure(figsize=(12,5))
+
+plt.subplot(1,2,1)
+plt.bar(student,maths,label="Mathematics")
+plt.title("Mathematics Marks")
+plt.xlabel("Students")
+plt.ylabel("Marks")
+plt.legend()
+plt.grid(True)
+
+plt.subplot(1,2,2)
+plt.plot(student,cs,marker ='o',label = "Computer Science")
+plt.title("Computer Science Marks")
+plt.xlabel("Students")
+plt.ylabel("Marks")
+plt.legend()
+plt.grid()
+
+plt.suptitle("Academic Performance of Students")
+
+plt.tight_layout()
+plt.show()
