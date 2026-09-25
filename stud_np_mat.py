@@ -12,10 +12,10 @@ print(f"Avverage Marks of Students in Maths: {avg_maths}")
 print('-'*40)
 
 high_phy = np.argmax(phy)
-print(f"Highest marks in Physics : {student(high_phy)}  {high_phy}")
+print(f"Highest marks in Physics : {student[high_phy]} Marks: {phy[high_phy]}")
 
 high_cs = np.argmax(cs)
-print(f"Highest marks is Computer Science: {student(high_phy)}  {high_phy}")
+print(f"Highest marks is Computer Science: {student[high_phy]}  Marks: {cs[high_cs]}")
 
 plt.figure(figsize=(12,5))
 
