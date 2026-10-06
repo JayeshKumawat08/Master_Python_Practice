@@ -11,7 +11,7 @@ wrong_pass = "mySecrectValut2026Practice"  # just one lowercase and it becomes w
 #Salt
 #random noise
 
-salt = os.random(16) # 16 bytes random noise
+salt = os.urandom(16) # 16 bytes random noise
 
 # Cryptographic Streaching (KDF)
 # hash the password 100000 times using SHA-256
@@ -27,7 +27,7 @@ wrong_key = hashlib.pbkdf2_hmac(
     hash_name = 'sha256',
     password = wrong_pass.encode('utf-8'),
     salt = salt,
-    iteration = 100000
+    iterations = 100000
 )
 
 # convert the raw binary keys to readable hexadecimal strings to see them 
