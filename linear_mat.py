@@ -20,9 +20,9 @@ class DataAnalyst:
 
         sns.kdeplot(self.cleaned_time, fill=True, color='blue', alpha=0.7, label="Cleaned Data")
 
-        plt.title("Impact of Preprocessing on User Session Time", fontsize= 14, fontwidth ='bold', pad=15)
-        plt.xlabel("Time Spent on Site",fontsize=12,fontwidth='bold')
-        plt.ylabel("Density (Frequency)",fontsize = 12, fontwidth='bold')
+        plt.title("Impact of Preprocessing on User Session Time", fontsize= 14, fontweight ='bold', pad=15)
+        plt.xlabel("Time Spent on Site",fontsize=12,fontweight='bold')
+        plt.ylabel("Density (Frequency)",fontsize = 12, fontweight='bold')
 
         plt.xlim(0,150)
         plt.legend()
@@ -31,4 +31,4 @@ class DataAnalyst:
 
 if __name__ == "__main__":
     analyst = DataAnalyst()
-    analyst.plot_preprocessing_impact
+    analyst.plot_preprocessing_impact()
