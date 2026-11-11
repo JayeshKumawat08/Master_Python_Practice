@@ -1,12 +1,20 @@
 class CustomerAccount:
-    purchase_history = []
-    def __int__(self,name,initial_balance):
+    def __init__(self,name,initial_balance):
         self.name = name
-        self.balance = initial_balance
+        
+        self.purchase_history = []
 
+        self.__balance = initial_balance
+
+
+    @property
+    def balance(self):
+        return self.__balance
+
+    
     def make_purchase(self,amount):
-        if self.balance >= amount:
-            self.balance -= amount
+        if self.__balance >= amount:
+            self.__balance -= amount
             self.purchase_history.append(amount)
             return True
         return False
@@ -20,4 +28,3 @@ user2.make_purchase(20)
 print("Jayesh's History:", user1.purchase_history)
 print("Sogani's History:", user2.purchase_history)
 
-user1.balance = 5000000
